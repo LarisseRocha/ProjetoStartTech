@@ -1,0 +1,97 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #f3f2eb;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul{
+  list-style: none;
+  font-style: italic;
+  font-weight: 700;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  background-image: url(./images/fundo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center fixed;
+  background-size: cover;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 1px 1px 10px 1px #f3f2eb;
+}
+
+header ul{
+  display: flex;
+}
+header ul li a{
+    transition: 300ms;
+}
+
+header ul li a:hover{
+  padding: 5px;
+  color: #d4d9e6;
+  text-decoration: underline;
+}
+
+.container{
+  text-align: center;
+}
+
+.container .name h1{
+  font-size: 60px;
+}
+
+.container .name h5{
+  font-size: 25px;
+}
+
+#about p{
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form{
+  width: 40%;
+  margin: 0 auto;
+  border: thick double #fff;
+  padding: 25px;
+}
+
+.form input{
+  width: 40%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.form button{
+  width: 15%;
+  padding: 5px 10px;
+  background-color: #92a2ca;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #373c4b;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 300ms ease-out;
+  border-radius: 0px 0px 5px 0px;
+}
+
+.form button:hover{
+  background-color: #7b8dbb;
+  color: #f5f7fa ;
+}
+
