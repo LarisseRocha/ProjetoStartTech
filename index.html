@@ -12,8 +12,8 @@
 </head>
 <body>
   <header>
-    <div>
-      <img src="" alt="">
+    <div id="logo">
+      <!-- img src="./images/logo.png" alt="logo do site em azul"> -->
     </div>
     <ul>
       <li>
@@ -33,13 +33,13 @@
         <h1>Larisse Rocha</h1>
         <h5>Front-end developer student</h5>
       </div>
-      <div id="arrow">
-        <i class="fas fa-sort-down"></i>
+      <div onclick="displayAbout()" id="arrow">
+        <i id="animation" class="fas fa-sort-down"></i>
       </div>
-      <div id="about">
-          Lorem ipsum, dolor sit amet consectetur 
+      <div style="display:none;" id="about">
+         <p>Lorem ipsum, dolor sit amet consectetur 
           adipisicing elit. Reiciendis distinctio 
-          rem quis asperiores consequuntur doloribus, deixe sue contato abaixo!
+          rem quis asperiores consequuntur doloribus, deixe sue contato abaixo!</p> 
       </div>
       <div class="form">
         <div>
@@ -52,6 +52,14 @@
       </div>
     </section>
   </main>
-  
+  <script>
+    function displayAbout(){
+      var arrow = document.getElementById('animation');
+      arrow.classList.toggle('rotate');
+      var display = document.getElementById('about');
+      display.classList.toggle('active');
+
+    }
+  </script>
 </body>
 </html>

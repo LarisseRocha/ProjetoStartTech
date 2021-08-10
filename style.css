@@ -27,8 +27,10 @@ header{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5px;
+  padding: 30px;
   box-shadow: 1px 1px 10px 1px #f3f2eb;
+  border-bottom: 12px;
+  margin-bottom: 45px;
 }
 
 header ul{
@@ -56,6 +58,31 @@ header ul li a:hover{
   font-size: 25px;
 }
 
+#arrow{
+  font-size: 30px;
+  cursor: pointer;
+  animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+  to{
+    visibility: hidden;
+  }
+}
+
+#animation{
+  transition: 300ms;
+}
+
+.rotate{
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+
+.active{
+  display: block !important;
+}
+
 #about p{
   max-width: 600px;
   margin: 0 auto;
@@ -67,6 +94,7 @@ header ul li a:hover{
   margin: 0 auto;
   border: thick double #fff;
   padding: 25px;
+  margin-top: 30px;
 }
 
 .form input{
@@ -95,3 +123,20 @@ header ul li a:hover{
   color: #f5f7fa ;
 }
 
+@media only screen and (max-width: 480px) {
+  .container .name h1{
+
+    font-size: 30px;
+
+  }
+
+  .container .name h5{
+
+    font-size: 30px;
+  }
+
+  #about p{
+    max-width: 80px;
+    text-align: justify;
+  }
+}
